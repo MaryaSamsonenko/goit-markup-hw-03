@@ -31,10 +31,7 @@
 .link {
   text-decoration: none;
 }
-.container.full {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 body {
   font-family: var(--primery-font);
   font-style: 400;
@@ -55,23 +52,30 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
-  background-color: lavender;
 }
 .container.full {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.container.slogan {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .container.box {
   padding-bottom: 94px;
 }
-
+.container.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 /* =======Header=======*/
 .container.header {
   display: flex;
   align-items: center;
+
   border-bottom: 1px solid #ececec;
 }
+
 .nav-header {
   display: flex;
 }
@@ -81,10 +85,11 @@ img {
   padding-bottom: 25px;
 
   font-family: var(--secondary-font);
+  color: #000000;
+
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #000000;
 }
 .logo:focus {
   color: var(--accent-color);
@@ -128,33 +133,36 @@ img {
   margin-right: 50px;
 }
 /* ======Hero====== */
+
 .slogan {
   text-align: center;
   color: var(--hero-text-color);
   background-color: var(--hero-background-color);
 }
 .slogan-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
-
-  margin-bottom: 30px;
 }
 .modal-button {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  min-width: 136px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+  color: var(--hero-text-color);
+  background-color: var(--accent-color);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--hero-text-color);
-  background-color: var(--accent-color);
-  text-align: center;
-  cursor: pointer;
-  border-radius: 4px;
-  border: 1px solid transparent;
-  padding: 10px 32px;
-  display: inline-block;
-  min-width: 136px;
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -162,15 +170,22 @@ img {
 }
 
 /* ======Basics===== */
-.basics {
-  padding-top: 94px;
+
+.basics-list {
+  display: flex;
+}
+.basics-item:not(:last-child) {
+  margin-right: 30px;
 }
 .basics-title {
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--title-text-color);
 }
 .basics-desc {
   font-size: 14px;
@@ -178,34 +193,56 @@ img {
 }
 /* ======About====== */
 .subtitle {
+  margin-bottom: 50px;
+  text-align: center;
+
+  color: var(--title-text-color);
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
-  color: var(--title-text-color);
-  margin-top: 0px;
-  margin-bottom: 50px;
 }
+.subtitle-list {
+  display: flex;
+}
+
+.subtitle-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team {
   background-color: #f5f4fa;
 }
+.team-list {
+  display: flex;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .team-img {
-  margin-top: 0px;
   margin-bottom: 30px;
 }
 .team-name {
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  color: var(--title-text-color);
-  margin-top: 0px;
-  margin-bottom: 10px;
+  text-align: center;
 }
 .team-profession {
+  text-align: center;
+  margin-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.18;
-  margin-top: 0px;
-  margin-bottom: 30px;
 }
 
 /* ======Footer====== */
@@ -214,24 +251,27 @@ img {
 }
 .footer-logo {
   font-family: var(--secondary-font);
+  color: var(--hero-text-color);
+
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: var(--hero-text-color);
 }
 .footer-address {
+  color: var(--hero-text-color);
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--hero-text-color);
 }
 
 .footer-contact .link {
+  color: rgba(255, 255, 255, 0.6);
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  color: rgba(255, 255, 255, 0.6);
 }
 .footer-contact .link:hover,
 .footer-contact .link:focus {
@@ -239,44 +279,84 @@ img {
 }
 /* =====Portfolio===== */
 
+.filter-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filter-menu-item:not(:last-child) {
+  margin-right: 8px;
+}
+.filter-menu-item {
+  margin-bottom: 50px;
+}
 .btn-filter {
-  padding: 6px 22px;
+  display: inline-block;
+  text-align: center;
   cursor: pointer;
+  min-width: 73px;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+  color: var(--title-text-color);
+
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
-  color: var(--title-text-color);
-  border-radius: 4px;
-  border: 1px solid transparent;
-  padding: 10px 32px;
-  display: inline-block;
-  min-width: 73px;
 }
 .btn-filter:hover,
 .btn-filter:focus {
   color: var(--hero-text-color);
   background-color: var(--accent-color);
 }
+.btn-filter.current {
+  color: var(--hero-text-color);
+  background-color: var(--accent-color);
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.projects-item:nth-child(3n) {
+  margin-right: 0px;
+}
+.projects-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+/*.projects-item {
+  border: 1px solid #eeeeee;
+}*/
 .projects-img {
-  margin-top: 0px;
-  margin-bottom: 20px;
+  display: block;
+  width: 370px;
 }
 .projects-title {
+  margin-bottom: 4px;
+
+  color: var(--title-text-color);
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-text-color);
-  margin-top: 0px;
-  margin-bottom: 4px;
 }
 
 .projects-desc {
+  color: var(--primary-text-color);
+
   font-size: 16px;
   line-height: 1.87;
-  color: var(--primary-text-color);
-  margin-top: 0px;
+}
+.card-link {
+  margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
