@@ -34,9 +34,10 @@
 
 body {
   font-family: var(--primery-font);
+  color: var(--primary-text-color);
+
   font-style: 400;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
 h1,
