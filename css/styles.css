@@ -38,6 +38,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
 h1,
 h2,
 h3,
@@ -47,29 +48,28 @@ img {
   margin: 0px;
   padding: 0px;
 }
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
-.container.full {
+
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.container.slogan {
+.section-box {
+  padding-bottom: 94px;
+}
+.slogan {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-.container.box {
-  padding-bottom: 94px;
-}
-.container.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 /* =======Header=======*/
-.container.header {
+.header {
   display: flex;
   align-items: center;
 
@@ -191,7 +191,9 @@ img {
   font-size: 14px;
   line-height: 1.71;
 }
+
 /* ======About====== */
+
 .subtitle {
   margin-bottom: 50px;
   text-align: center;
@@ -210,6 +212,8 @@ img {
   margin-right: 30px;
 }
 
+/* =======Team====== */
+
 .team {
   background-color: #f5f4fa;
 }
@@ -224,8 +228,11 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team-img {
-  margin-bottom: 30px;
+
+.card-team {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-name {
   margin-bottom: 10px;
@@ -235,18 +242,18 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
 }
 .team-profession {
-  text-align: center;
-  margin-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.18;
 }
 
 /* ======Footer====== */
+
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--hero-background-color);
 }
 .footer-logo {
@@ -277,7 +284,10 @@ img {
 .footer-contact .link:focus {
   color: var(--accent-color);
 }
+
 /* =====Portfolio===== */
+
+/* =====Filter===== */
 
 .filter-menu {
   display: flex;
@@ -315,6 +325,8 @@ img {
   color: var(--hero-text-color);
   background-color: var(--accent-color);
 }
+
+/* ======Projects====== */
 
 .projects-list {
   display: flex;
@@ -355,8 +367,8 @@ img {
   line-height: 1.87;
 }
 .card-link {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }

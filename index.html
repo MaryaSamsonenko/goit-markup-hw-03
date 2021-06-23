@@ -21,37 +21,35 @@
   </head>
   <body>
     <!-- ========Header======== -->
-    <header class="header">
-      <div class="container header">
-        <nav class="nav-header">
-          <a lang="en" class="logo-up link" href="./"><span class="logo-accent">Web</span>Studio</a>
-          <ul class="menu-list list">
-            <li class="menu-item">
-              <a class="menu-link link current" href="./index.html">Студия</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="menu-item">
-              <a class="menu-link link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contact-top-list list">
-          <li class="contact-top-item">
-            <a class="mailto-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    <header class="header container">
+      <nav class="nav-header">
+        <a lang="en" class="logo-up link" href="./"><span class="logo-accent">Web</span>Studio</a>
+        <ul class="menu-list list">
+          <li class="menu-item">
+            <a class="menu-link link current" href="./index.html">Студия</a>
           </li>
-          <li class="contact-top-item">
-            <a class="tel-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+          <li class="menu-item">
+            <a class="menu-link link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link link" href="">Контакты</a>
           </li>
         </ul>
-      </div>
+      </nav>
+      <ul class="contact-top-list list">
+        <li class="contact-top-item">
+          <a class="mailto-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="contact-top-item">
+          <a class="tel-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
     </header>
     <main>
       <!-- =========Hero======== -->
 
       <section class="slogan">
-        <div class="container slogan">
+        <div class="container">
           <h1 class="slogan-title">Эффективные решения <br />для вашего бизнеса</h1>
           <button class="modal-button" type="button">Заказать услугу</button>
         </div>
@@ -59,8 +57,8 @@
 
       <!-- ========Basics======== -->
 
-      <section class="basics">
-        <div class="container full">
+      <section class="basics section">
+        <div class="container">
           <h2 class="visually-hidden">Принципы работы студии</h2>
           <ul class="basics-list list">
             <li class="basics-item item">
@@ -91,8 +89,8 @@
         </div>
       </section>
       <!-- ========About======== -->
-      <section class="section">
-        <div class="container box">
+      <section class="section-box">
+        <div class="container">
           <h2 class="subtitle">Чем мы занимаемся</h2>
           <ul class="subtitle-list list">
             <li class="subtitle-item">
@@ -116,7 +114,7 @@
       <!-- ========Team======== -->
 
       <section class="team section">
-        <div class="container full">
+        <div class="container">
           <h2 class="subtitle">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
@@ -127,8 +125,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Игорь Демьяненко</h3>
-              <p class="team-profession">Product Designer</p>
+              <div class="card-team">
+                <h3 class="team-name">Игорь Демьяненко</h3>
+                <p class="team-profession">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -138,8 +138,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Ольга Репина</h3>
-              <p class="team-profession">Frontend Developer</p>
+              <div class="card-team">
+                <h3 class="team-name">Ольга Репина</h3>
+                <p class="team-profession">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -149,8 +151,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Николай Тарасов</h3>
-              <p class="team-profession">Marketing</p>
+              <div class="card-team">
+                <h3 class="team-name">Николай Тарасов</h3>
+                <p class="team-profession">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -160,8 +164,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="team-name">Михаил Ермаков</h3>
-              <p class="team-profession">UI Designer</p>
+              <div class="card-team">
+                <h3 class="team-name">Михаил Ермаков</h3>
+                <p class="team-profession">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -170,21 +176,17 @@
 
     <!-- ========Footer======== -->
 
-    <footer class="footer">
-      <div class="container footer">
-        <a lang="en" class="footer-logo link" href="/"
-          ><span class="logo-accent">Web</span>Studio</a
-        >
-        <address class="footer-address list">г. Киев, пр-т Леси Украинки, 26</address>
-        <ul class="footer-contact list">
-          <li class="footer-contact-item">
-            <a class="mailto-footer link" href="malito:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li class="footer-contact-item">
-            <a class="tel-footer link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </div>
+    <footer class="footer container">
+      <a lang="en" class="footer-logo link" href="/"><span class="logo-accent">Web</span>Studio</a>
+      <address class="footer-address list">г. Киев, пр-т Леси Украинки, 26</address>
+      <ul class="footer-contact list">
+        <li class="footer-contact-item">
+          <a class="mailto-footer link" href="malito:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="footer-contact-item">
+          <a class="tel-footer link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>
