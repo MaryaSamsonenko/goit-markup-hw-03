@@ -77,11 +77,13 @@ img {
 
 /* =======Header=======*/
 
+.heder {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-line {
   display: flex;
   align-items: center;
-
-  border-bottom: 1px solid #ececec;
 }
 
 .nav-header {
@@ -127,13 +129,9 @@ img {
   margin-right: 50px;
 }
 
-.menu-item,
-.contact-top-item {
-  display: block;
-}
-
 .menu-link,
 .contact-link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
